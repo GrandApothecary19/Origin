@@ -5,48 +5,7 @@ Sub Òàáë
 '
 
 '
-    Range("A1:M7").Select
-    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
-    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
-    With Selection.Borders(xlEdgeLeft)
-        .LineStyle = xlContinuous
-        .ColorIndex = xlAutomatic
-        .TintAndShade = 0
-        .Weight = xlThin
-    End With
-    With Selection.Borders(xlEdgeTop)
-        .LineStyle = xlContinuous
-        .ColorIndex = xlAutomatic
-        .TintAndShade = 0
-        .Weight = xlThin
-    End With
-    With Selection.Borders(xlEdgeBottom)
-        .LineStyle = xlContinuous
-        .ColorIndex = xlAutomatic
-        .TintAndShade = 0
-        .Weight = xlThin
-    End With
-    With Selection.Borders(xlEdgeRight)
-        .LineStyle = xlContinuous
-        .ColorIndex = xlAutomatic
-        .TintAndShade = 0
-        .Weight = xlThin
-    End With
-    With Selection.Borders(xlInsideVertical)
-        .LineStyle = xlContinuous
-        .ColorIndex = xlAutomatic
-        .TintAndShade = 0
-        .Weight = xlThin
-    End With
-    With Selection.Borders(xlInsideHorizontal)
-        .LineStyle = xlContinuous
-        .ColorIndex = xlAutomatic
-        .TintAndShade = 0
-        .Weight = xlThin
-    End With
-    Range("B1").Select
-    ActiveCell.FormulaR1C1 = "ßíâàðü"
-    Range("C1").Select
+
     ActiveCell.FormulaR1C1 = "Ôåâðàëü"
     Range("D1").Select
     ActiveCell.FormulaR1C1 = "Ìàðò"
