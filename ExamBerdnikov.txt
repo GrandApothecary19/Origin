@@ -1,0 +1,122 @@
+
+Sub Òàáë
+'
+' Òàáë Ìàêðîñ
+'
+
+'
+    Range("A1:M7").Select
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = xlAutomatic
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("B1").Select
+    ActiveCell.FormulaR1C1 = "ßíâàðü"
+    Range("C1").Select
+    ActiveCell.FormulaR1C1 = "Ôåâðàëü"
+    Range("D1").Select
+    ActiveCell.FormulaR1C1 = "Ìàðò"
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "Ìàé"
+    Range("F1").Select
+    ActiveCell.FormulaR1C1 = "Àïðåëü"
+    Range("G1").Select
+    ActiveCell.FormulaR1C1 = "Èþíü"
+    Range("H1").Select
+    ActiveCell.FormulaR1C1 = "Èþëü"
+    Range("I1").Select
+    ActiveCell.FormulaR1C1 = "Àâãóñò"
+    Range("J1").Select
+    ActiveCell.FormulaR1C1 = "Ñåíòÿáðü"
+    Range("K1").Select
+    ActiveCell.FormulaR1C1 = "Îêòÿáðü"
+    Range("L1").Select
+    ActiveCell.FormulaR1C1 = "Íîÿáðü"
+    Range("M1").Select
+    ActiveCell.FormulaR1C1 = "Äåêàáðü"
+    Range("F1").Select
+    ActiveCell.FormulaR1C1 = "Ìàé"
+    Range("E1").Select
+    ActiveCell.FormulaR1C1 = "Àïðåëü"
+    Range("A2").Select
+    ActiveCell.FormulaR1C1 = "Ïèòàíèå"
+    Range("A3").Select
+    ActiveCell.FormulaR1C1 = "Òðàíñïîðò"
+    Range("A4").Select
+    ActiveCell.FormulaR1C1 = "Ëèòåðàòóðà"
+    Range("A5").Select
+    ActiveCell.FormulaR1C1 = "Ðàçâëå÷åíèÿ"
+    Range("A6").Select
+    ActiveCell.FormulaR1C1 = "Êîìì.Ïëàòåæè"
+    Range("A7").Select
+    ActiveCell.FormulaR1C1 = "Èòîãî"
+    Range("A6").Select
+    ActiveCell.FormulaR1C1 = "Êîìì.ïëàòåæè"
+    Range("A1:B1").Select
+    Columns("A:A").ColumnWidth = 13.43
+    Range("B7").Select
+    ActiveCell.FormulaR1C1 = "=R[-5]C+R[-4]C+R[-3]C+R[-2]C+R[-1]C"
+    Range("B7").Select
+    Selection.AutoFill Destination:=Range("B7:H7"), Type:=xlFillDefault
+    Range("B7:H7").Select
+    Range("H7").Select
+    Selection.AutoFill Destination:=Range("H7:M7"), Type:=xlFillDefault
+    Range("H7:M7").Select
+    Range("M7").Select
+    ActiveCell.FormulaR1C1 = "=R[-5]C+R[-4]C+R[-3]C+R[-2]C+R[-1]C"
+    Range("M8").Select
+End Sub
+Sub Ãèñòîãðàììà()
+'
+' Ãèñòîãðàììà Ìàêðîñ
+'
+
+'
+    Range("A1:M7").Select
+    Range("M7").Activate
+    ActiveSheet.Shapes.AddChart.Select
+    ActiveChart.SetSourceData Source:=Range("Ëèñò1!$A$1:$M$7")
+    ActiveChart.ChartType = xlColumnClustered
+End Sub
+Sub Óäàë_ãèñòîãðàììû()
+'
+' Óäàë_ãèñòîãðàììû Ìàêðîñ
+'
+
+'
+    ActiveChart.Parent.Delete
+End Sub
